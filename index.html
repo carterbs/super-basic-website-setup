@@ -1,0 +1,140 @@
+<html>
+<head>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<script src="/index.js"></script>
+</head>
+
+<body>
+	<nav id="topNav" class="navbar navbar-toggleable-md navbar-inverse bg-primary fixed-top">
+		<button class="navbar-toggler navbar-toggler-right py-2" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+			☰
+		</button>
+		<a class="navbar-brand" href="#first">Bootstrap 4</a>
+		<div class="collapse navbar-collapse" id="collapsingNavbar">
+			<ul class="nav navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="/pages/page2.html">Page 2</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link page-scroll" data-toggle="modal" title="A free Bootstrap theme" href="#aboutModal">About</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container-fluid h-100">
+		<div class="row h-100">
+			<!-- left sidebar -->
+			<div class="col-sm-2 fixed pl-0 py-3">
+				<h5 class="ml-3 hidden-sm-down text-muted">Fixed Width</h5>
+				<ul class="nav flex-sm-column justify-content-center">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+				</ul>
+			</div>
+			<!-- center content -->
+			<div class="col fluid bg-faded py-3">
+				<h5 class="text-muted">Fluid width</h5>
+				<div class="row my-3">
+					<div class="col-12">
+						<h3 class="text-primary pt-3 hidden-sm-down">Fixed-Fluid-Fixed <span class="small">(Holy Grail Layout)</span></h3>
+					</div>
+					<div class="col-xl-3 col-lg-6">
+						<div class="card card-block">
+							<h2 class="text-center"><span class="label label-danger">Snippets</span></h2>
+							<h1 class="text-center">311</h1>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6">
+						<div class="card card-block">
+							<h2 class="text-center"><span class="label label-danger">Downloads</span></h2>
+							<h1 class="text-center">982</h1>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6">
+						<div class="card card-block">
+							<h2 class="text-center"><span class="label label-danger">Sales</span></h2>
+							<h1 class="text-center">112</h1>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6">
+						<div class="card card-block">
+							<h2 class="text-center"><span class="label label-danger">Questions</span></h2>
+							<h1 class="text-center">209</h1>
+						</div>
+					</div>
+				</div>
+				<!--/row-->
+
+				<h4 class="mt-3">Now that Bootstrap 4 has a flexbox grid it's much easier to create a fixed-fluid layout like this one.</h4>
+				<p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+					Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+					eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+					quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores eos qui ratione voluptatem sequi nesciunt.
+					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+					modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+					exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+				<p>What will you do with this new awesomeness in Bootstrap 4?</p>
+
+			</div>
+			<!-- right sidebar -->
+			<div class="col-sm-2 fixed py-3">
+				<h5 class="text-muted">Fixed Width</h5>
+				<div class="card card-block mb-2">
+					Put some content here in the sidebar like ads or links.
+				</div>
+				<div class="card card-block mb-2">
+					Put some content here in the sidebar like ads or links.
+				</div>
+				<div class="card card-block mb-2">
+					Put some content here in the sidebar like ads or links.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				</div>
+				<div class="modal-body">
+					<p>One fine modal body…</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
