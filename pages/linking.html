@@ -1,0 +1,29 @@
+<html>
+
+<head>
+	<style>
+		/*inline stylesheet. This makes anchor tags stack. I think it makes them take 100% width under the hood/ can't remember. I think by default they're inline-block.*/
+		a {
+			display: block;
+		}	
+	</style>
+</head>
+
+<body>
+	<h2>Linking</h2>
+	<a href="/index.html">Root relative link to Home</a>
+	<a href="../index.html">Relative link to Home</a>
+	<a href="http://localhost:3000/index.html">Absolute link to Home</a>
+	<!-- "/" refers to the "root" of the server. In this case, it's the main folder that index.html lives in (because that's where we started our server). On a real server, it'd be the folder that your DNS points your website to...
+	DNS is a complicated and difficult topic. Just know that when you tyoe "google.com" into your browser,
+	that request is routed to a server. The server then points you to a folder and an html file inside of that folder. The "root" of your website is set up when you publish
+	a website. When running our example locally, it's the main folder in this repo. -->
+	<a href="/pages/secondLevel/page3.html">Root Relative Link to page 3 (has different css file path examples)</a>
+	<!-- "./"" means "starting at the directory that this file is in." For linking.html, that's the "pages" directory. -->
+	<a href="./secondLevel/page3.html">Relative link to page 3</a>
+	<!-- An absolute link is just that - there's no guesswork. The link points to a web address without figuring out where the current file lives or any of that.
+	They're good for linking to external resources or websites. For your own resources, best practice is to use relative links. -->
+	<a href="http://localhost:3000/pages/secondLevel/page3.html">Absolute link to page 3</a>
+</body>
+
+</html>

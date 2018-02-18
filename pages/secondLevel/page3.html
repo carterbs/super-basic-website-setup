@@ -1,0 +1,21 @@
+<HTML>
+	<head>
+		<!-- "../" means "go back a directory". 
+			One directory back from this is the "pages" directory. 
+			An additional folder back brings us to the root, where we can find the assets folder
+			and eventually the CSS. -->
+		<link rel="stylesheet" href="../../assets/css/page3-relative.css">
+		<link rel="stylesheet" href="/assets/css/page3-root-relative.css">
+		<link rel="stylesheet" href="http://localhost:3000/assets/css/page3-absolute.css">
+	</head>
+	<body>
+		<h2>Page 3</h2>
+		<a href="../../index.html">Home</a>
+		<p class="relative">This text is styled by the relative css.</p>
+		<p class="root-relative">This text is styled by the root-relative css.</p>
+		<p class="absolute">This text is styled by the absolute css.</p>
+		
+		<p>Relative or root-relative links are fine. I would use relative links. 
+			I can't remember why people frown upon absolute links so much. But probably just makes it harder to have local + production environments.</p>
+	</body>
+</HTML>
